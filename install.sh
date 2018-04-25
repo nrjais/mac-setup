@@ -39,7 +39,7 @@ brew install ack
 brew install git
 
 
-echo $name | sh -c "$(curl -fsSL https://raw.githubusercontent.com/nrjais/oh-my-zsh/develop/tools/install.sh)"
+echo $name | sh -c "$(curl -fsSL https://raw.githubusercontent.com/nrjais/oh-my-zsh/master/tools/install.sh)"
 
 echo "Installing vim";
 git clone --depth=1 https://github.com/nrjais/vimrc.git ~/.vim_runtime
