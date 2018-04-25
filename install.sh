@@ -66,9 +66,6 @@ brew cask install google-chrome
 echo "Installing google drive";
 brew cask install google-backup-and-sync
 
-echo "Installing dropbox";
-brew cask install dropbox
-
 echo "Installing iterm2";
 brew cask install iterm2
 
@@ -83,13 +80,6 @@ brew cask install adobe-acrobat-reader
 
 echo "Installing java";
 brew cask install java
-
-echo "Installing mocha";
-npm i -g mocha
-
-echo "Installing nodemon";
-npm i -g nodemon
-
 
 #Cleanup
 brew cleanup
