@@ -21,7 +21,10 @@ fi
 brew update
 
 # Upgrade any already-installed formulae.
-brew upgrade --all
+brew upgrade
+
+brew cask tap
+brew cask upgrade
 
 export HOMEBREW_NO_AUTO_UPDATE=1
 
@@ -46,13 +49,14 @@ git clone --depth=1 https://github.com/nrjais/vimrc.git ~/.vim_runtime
 
 sh ~/.vim_runtime/install.sh
 
-echo "Installing node, clojure";
+echo "Installing docker"
+brew install docker
 
+echo "Installing node, clojure";
 brew install node
 brew install leiningen
 
 brew install wget
-brew cask tap
 
 echo "Installing slack";
 brew cask install slack
@@ -83,3 +87,4 @@ brew cask install java
 
 #Cleanup
 brew cleanup
+brew cask cleanup
