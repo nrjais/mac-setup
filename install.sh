@@ -51,6 +51,7 @@ sh ~/.vim_runtime/install.sh
 
 echo "Installing docker"
 brew install docker
+brew cask install docker
 
 echo "Installing node, clojure";
 brew install node
@@ -84,6 +85,10 @@ brew cask install adobe-acrobat-reader
 
 echo "Installing java";
 brew cask install java
+
+echo "Installing virtualbox and vagrant"
+brew cask install vitualbox
+brew cask install vagrant
 
 #Cleanup
 brew cleanup
