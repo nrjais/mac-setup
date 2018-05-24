@@ -6,7 +6,7 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until the script has finished.
 while true; do sudo -nv true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-read -t 1 -n 10000 discard 
+read waste
 #Ask for name to use in oh my zsh
 echo "Enter name to display in prompt"
 read name
@@ -88,7 +88,7 @@ echo "Installing java";
 brew cask install java
 
 echo "Installing virtualbox and vagrant"
-brew cask install vitualbox
+brew cask install virtualbox
 brew cask install vagrant
 
 #Cleanup
