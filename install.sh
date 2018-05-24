@@ -6,6 +6,7 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until the script has finished.
 while true; do sudo -nv true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+read -t 1 -n 10000 discard 
 #Ask for name to use in oh my zsh
 echo "Enter name to display in prompt"
 read name
