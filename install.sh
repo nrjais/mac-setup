@@ -6,10 +6,14 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until the script has finished.
 while true; do sudo -nv true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-read waste
 #Ask for name to use in oh my zsh
-echo "Enter name to display in prompt"
+echo "\n\nEnter name to display in prompt"
 read name
+while [ -z "$name" ]
+do
+  read name
+done
+
 
 # Check for Homebrew,
 # Install if we don't have it
@@ -17,6 +21,9 @@ if test ! $(which brew); then
   echo "Installing homebrew..."
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
+
+echo "Installing java";
+brew cask install java
 
 # Make sure we’re using the latest Homebrew.
 brew update
@@ -82,11 +89,8 @@ brew cask install vlc
 echo "Installing visual-studio-code";
 brew cask install visual-studio-code
 
-echo "Installing adobe reader";
-brew cask install adobe-acrobat-reader
-
-echo "Installing java";
-brew cask install java
+echo "Installing skim pdf reader";
+brew cask install skim
 
 echo "Installing virtualbox and vagrant"
 brew cask install virtualbox
