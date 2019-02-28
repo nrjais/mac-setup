@@ -22,9 +22,6 @@ if test ! $(which brew); then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-echo "Installing java";
-brew cask install java
-
 # Make sure we’re using the latest Homebrew.
 brew update
 
@@ -35,6 +32,9 @@ brew cask tap
 brew cask upgrade
 
 export HOMEBREW_NO_AUTO_UPDATE=1
+
+echo "Installing java";
+brew cask install java
 
 brew install coreutils
 sudo ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
