@@ -1,0 +1,17 @@
+ack
+autojump
+bat
+docker
+git
+haskell-stack
+htop
+jenv
+leiningen
+node
+python@2
+rust
+sbt
+scala
+vim
+wget
+zsh-syntax-highlighting
