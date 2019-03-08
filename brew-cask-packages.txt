@@ -4,8 +4,6 @@ docker
 java
 vagrant
 flycut
-java8
-virtualbox
 visual-studio-code
 google-backup-and-sync
 postman
@@ -17,3 +15,5 @@ intellij-idea
 openoffice
 calibre
 keepingyouawake
+java8
+virtualbox
