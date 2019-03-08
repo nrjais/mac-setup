@@ -54,8 +54,8 @@ sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 # Clone setup scripts
 git clone https://github.com/nrjais/mac-setup
-
-sh ./mac-setup/install-packages.sh
+cd ./mac-setup
+sh ./install-packages.sh
 
 rm -rf mac-setup
 ######################
