@@ -1,6 +1,7 @@
 iterm2
 slack
 docker
+skim
 java
 vagrant
 flycut
