@@ -15,5 +15,6 @@ google-chrome
 intellij-idea
 calibre
 keepingyouawake
+iglance
 java8
 virtualbox
