@@ -1,3 +1,8 @@
+coreutils
+git
+gnu-sed
+findutils
+moreutils
 ack
 autojump
 bat
@@ -12,4 +17,3 @@ python@2
 sbt
 scala
 wget
-rust
