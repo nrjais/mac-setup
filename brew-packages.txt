@@ -8,12 +8,10 @@ autojump
 bat
 docker
 git
-haskell-stack
 htop
 jenv
 leiningen
 node
-python@2
 sbt
 scala
 wget
