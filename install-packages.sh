@@ -76,8 +76,8 @@ function list_failed_casks_and_packages(){
 }
 
 update_brew
-install_packages_from brew-packages.txt
-install_casks_from brew-cask-packages.txt
+install_packages_from ./mac-setup/brew-packages.txt
+install_casks_from ./mac-setup/brew-cask-packages.txt
 retry_failed_packages
 retry_failed_casks
 list_failed_casks_and_packages
