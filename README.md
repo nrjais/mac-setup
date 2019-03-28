@@ -1,9 +1,14 @@
 # macSetupScript
 
 ## Usage
-### Run command
+### Run command (With Oh-My-Zsh)
 ```
-curl https://raw.githubusercontent.com/nrjais/mac-setup/master/install.sh -o setup.sh && sh setup.sh && rm -f setup.sh
+git clone https://github.com/nrjais/mac-setup && OMZSH=1 ./mac-setup/install.sh
+```
+
+### Run command (Without Oh-My-Zsh)
+```
+git clone https://github.com/nrjais/mac-setup && ./mac-setup/install.sh
 ```
 
 ---
