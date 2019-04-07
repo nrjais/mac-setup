@@ -1,4 +1,4 @@
-# macSetupScript
+# Mac Setup Script
 
 ## Usage
 ### Run command (With Oh-My-Zsh)

@@ -7,13 +7,13 @@ sudo -v
 while true; do sudo -nv true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 function read_name_for_omzsh() {
-  read NAME
-  while [ -z "$NAME" ]
+  read NAME_TO_DISPLAY
+  while [ -z "$NAME_TO_DISPLAY" ]
   do
-    read NAME
+    read NAME_TO_DISPLAY
   done
 
-  echo $NAME
+  echo $NAME_TO_DISPLAY
 }
 
 function print_msg(){
@@ -21,7 +21,7 @@ function print_msg(){
 }
 
 #Ask for name to use in oh my zsh if OMZSH is 1
-[[ "$OMZSH" ]] && print_msg && NAME=$(read_name_for_omzsh)
+[[ "$OMZSH" ]] && print_msg && export NAME_TO_DISPLAY=$(read_name_for_omzsh)
 
 # Check for Homebrew,
 # Install if we don't have it
@@ -31,9 +31,9 @@ if test ! $(which brew); then
 fi
 
 #Install oh my zsh if OMZSH is 1
-[[ "$OMZSH" ]] && echo $NAME | sh -c "$(curl -fsSL https://raw.githubusercontent.com/nrjais/oh-my-zsh/master/tools/install.sh)"
+[[ "$OMZSH" ]] && ./mac-setup/omzsh.sh
 
-echo "Installing vim";
+echo "Installing vim configurations";
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/nrjais/vimrc/master/install.sh)"
 
 #Install brew packages and casks
