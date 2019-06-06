@@ -8,7 +8,6 @@ autojump
 bat
 docker
 git
-htop
 jenv
 leiningen
 node

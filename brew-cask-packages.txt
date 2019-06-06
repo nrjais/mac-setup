@@ -3,7 +3,6 @@ slack
 docker
 skim
 java
-vagrant
 flycut
 visual-studio-code
 google-backup-and-sync
