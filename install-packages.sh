@@ -11,6 +11,7 @@ function update_brew(){
   brew upgrade
 
   brew tap caskroom/versions
+  brew tap caskroom/fonts
   brew cask upgrade
 }
 

@@ -12,5 +12,7 @@ jenv
 leiningen
 node
 sbt
-scala
+dotty
 wget
+rustup-init
+tmux
