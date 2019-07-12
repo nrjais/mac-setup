@@ -11,8 +11,8 @@ firefox
 alacritty
 google-chrome
 intellij-idea
-calibre
 zoomus
+appcleaner
 keepingyouawake
 iglance
 google-backup-and-sync
