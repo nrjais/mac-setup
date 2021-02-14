@@ -5,7 +5,6 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 function update_brew() {
   brew update
   brew upgrade
-  brew cask upgrade
 }
 
 update_brew
