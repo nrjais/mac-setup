@@ -13,9 +13,6 @@ if test ! $(which brew); then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-echo "Installing vim configurations";
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/nrjais/vimrc/master/install.sh)"
-
 #Install brew packages and casks
 ./mac-setup/install-packages.sh
 
